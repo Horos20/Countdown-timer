@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    width: 100%;
+    background: url(images/bg-stars.svg) repeat-x, url(images/pattern-hills.svg) no-repeat bottom, hsl(235, 16%, 14%);
+    background-size: auto 70vh, auto 30vh;
+}
+
+.page-container {
+    overflow: auto;
+    height: 100%;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 20vh;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: .30rem;
+}
+
+.grid {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1.9fr 0.1fr; 
+    gap: 20px 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.grid .item {
+    color: hsl(345, 95%, 68%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: hsl(236, 21%, 26%);
+    border-radius: 5px;
+    font-size: 46px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.flip1 {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(23, 24, 36, 0.3);
+    border-radius: 5px;
+}
+
+.flip1::before {
+    width: 0.5rem;
+    height: 0.30rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 0;
+    content: " ";
+    background: #1e1e28;
+}
+
+.flip1::after {
+    width: 0.5rem;
+    height: 0.30rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 100% 0 0 0;
+    content: " ";
+    background: #1e1e28;
+}
+
+
+.flip2 {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.flip2::before {
+    width: 0.5rem;
+    height: 0.30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 100% 0;
+    content: " ";
+    background: #1e1e28;
+}
+
+.flip2::after {
+    width: 0.5rem;
+    height: 0.30rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 100%;
+    content: " ";
+    background: #1e1e28;
+}
+
+.grid p {
+    color: hsl(237, 18%, 59%);
+    letter-spacing: .30rem;
+}
+
+.icons {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.icons img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.icons img:hover {
+    filter: brightness(0) saturate(100%) invert(63%) sepia(56%) saturate(4609%) hue-rotate(311deg) brightness(101%) contrast(97%);
+}
+
+
+
+
+/*
+### Primary
+
+- Grayish blue: hsl(237, 18%, 59%)
+- Soft red: hsl(345, 95%, 68%) TEXT
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Dark desaturated blue: hsl(236, 21%, 26%)
+- Very dark blue: hsl(235, 16%, 14%)
+- Very dark (mostly black) blue: hsl(234, 17%, 12%)
+*/
+
+
+
+/*
+Mobile: 375px
+Desktop: 1440px 
+ */
