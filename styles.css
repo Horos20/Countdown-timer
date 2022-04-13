@@ -137,27 +137,3 @@ h1 {
 .icons img:hover {
     filter: brightness(0) saturate(100%) invert(63%) sepia(56%) saturate(4609%) hue-rotate(311deg) brightness(101%) contrast(97%);
 }
-
-
-
-
-/*
-### Primary
-
-- Grayish blue: hsl(237, 18%, 59%)
-- Soft red: hsl(345, 95%, 68%) TEXT
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Dark desaturated blue: hsl(236, 21%, 26%)
-- Very dark blue: hsl(235, 16%, 14%)
-- Very dark (mostly black) blue: hsl(234, 17%, 12%)
-*/
-
-
-
-/*
-Mobile: 375px
-Desktop: 1440px 
- */
